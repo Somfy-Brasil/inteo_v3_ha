@@ -94,7 +94,7 @@ custom_components/inteo_v3/
 - Python 3.9+
 
 ### ⚠️ Importante
-Esta integração usa **OAuth2 PKCE** que só está disponível no Home Assistant 2025.1+. Se você estiver usando uma versão anterior, considere atualizar ou usar uma versão alternativa da integração.
+Esta integração usa **OAuth2 PKCE** que só está disponível no Home Assistant 2025.1+. Se você estiver usando uma versão anterior, considere atualizar sua instalação do Home Assistant.
 
 ## 📄 Licença
 
