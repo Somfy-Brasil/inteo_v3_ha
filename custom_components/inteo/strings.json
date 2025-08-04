@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurar Inteo",
+        "description": "Configure sua integração Inteo via OAuth2."
+      },
+      "oauth": {
+        "title": "Autenticação Inteo",
+        "description": "Por favor, autentique-se com sua conta Inteo."
+      }
+    },
+    "abort": {
+      "already_configured": "Inteo já está configurado",
+      "missing_token": "Token de acesso não encontrado",
+      "oauth_error": "Erro durante autenticação OAuth2"
+    },
+    "error": {
+      "cannot_connect": "Não foi possível conectar ao Inteo",
+      "invalid_auth": "Autenticação inválida",
+      "unknown": "Erro desconhecido"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opções do Inteo",
+        "description": "Configure as opções do Inteo."
+      }
+    }
+  }
+}
