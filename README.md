@@ -2,6 +2,8 @@
 
 Integração customizada do Home Assistant para dispositivos Inteo v3.0.
 
+**[🇺🇸 English version](README.en.md)**
+
 ## 📋 Descrição
 
 Esta integração permite controlar dispositivos conectados ao **Hub Somfy InteO V3** através do Home Assistant usando autenticação OAuth2.
