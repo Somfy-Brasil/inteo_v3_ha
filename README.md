@@ -11,6 +11,7 @@ Esta integração permite controlar dispositivos conectados ao **Hub Somfy InteO
 **⚠️ Importante:** Esta integração funciona exclusivamente com:
 - **Hub Somfy InteO V3** (hardware)
 - **App My Inteo 3.0** (necessário para configuração inicial dos dispositivos)
+- **Dispositivos com protocolo RTS** (Radio Technology Somfy)
 
 Os dispositivos (persianas, cortinas, etc.) devem ser configurados primeiro no app **My Inteo 3.0** antes de usar esta integração.
 
@@ -62,7 +63,6 @@ Os dispositivos (persianas, cortinas, etc.) devem ser configurados primeiro no a
 - ✅ **Autenticação OAuth2 PKCE** segura (Home Assistant 2025.1+)
 - ✅ **Descoberta automática** de dispositivos
 - ✅ **Controle de cortinas/persianas**
-- ✅ **Renovação automática** de tokens
 - ✅ **Suporte a múltiplos dispositivos**
 
 ## 📱 Dispositivos Suportados
@@ -70,6 +70,8 @@ Os dispositivos (persianas, cortinas, etc.) devem ser configurados primeiro no a
 - Cortinas motorizadas
 - Persianas
 - Outros dispositivos compatíveis com o Hub Somfy InteO V3
+
+**🔧 Protocolo:** Todos os dispositivos utilizam o **protocolo RTS** (Radio Technology Somfy).
 
 **📱 Pré-requisito:** Todos os dispositivos devem ser configurados primeiro no app **My Inteo 3.0**.
 
@@ -107,5 +109,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ### v0.1.0
 - ✅ Implementação inicial
 - ✅ OAuth2 authentication
-- ✅ Cover entity support
-- ✅ Automatic token renewal 
+- ✅ Cover entity support 

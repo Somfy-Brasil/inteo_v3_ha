@@ -11,6 +11,7 @@ This integration allows you to control devices connected to the **Somfy InteO V3
 **⚠️ Important:** This integration works exclusively with:
 - **Somfy InteO V3 Hub** (hardware)
 - **My Inteo 3.0 App** (required for initial device configuration)
+- **RTS protocol devices** (Radio Technology Somfy)
 
 Devices (blinds, curtains, etc.) must be configured first in the **My Inteo 3.0 App** before using this integration.
 
@@ -62,7 +63,6 @@ Devices (blinds, curtains, etc.) must be configured first in the **My Inteo 3.0 
 - ✅ **Secure OAuth2 PKCE authentication** (Home Assistant 2025.1+)
 - ✅ **Automatic device discovery**
 - ✅ **Blind/curtain control**
-- ✅ **Automatic token renewal**
 - ✅ **Multiple device support**
 
 ## 📱 Supported Devices
@@ -70,6 +70,8 @@ Devices (blinds, curtains, etc.) must be configured first in the **My Inteo 3.0 
 - Motorized curtains
 - Blinds
 - Other devices compatible with Somfy InteO V3 Hub
+
+**🔧 Protocol:** All devices use the **RTS protocol** (Radio Technology Somfy).
 
 **📱 Prerequisite:** All devices must be configured first in the **My Inteo 3.0 App**.
 
@@ -107,5 +109,4 @@ This project is under MIT License. See the [LICENSE](LICENSE) file for more deta
 ### v0.1.0
 - ✅ Initial implementation
 - ✅ OAuth2 PKCE authentication
-- ✅ Cover entity support
-- ✅ Automatic token renewal 
+- ✅ Cover entity support 
