@@ -23,7 +23,8 @@ Devices (blinds, curtains, etc.) must be configured first in the **My Inteo 3.0 
 4. Add this repository: `Somfy-Brasil/inteo_v3_ha`
 5. Search for "My InteO 3.0" in integrations
 6. Click **Download**
-7. Restart Home Assistant
+7. **Restart Home Assistant**
+8. **Configure the integration** (see "Configuration" section below)
 
 ### Method 2: Manual
 1. Download this repository
@@ -40,9 +41,21 @@ Devices (blinds, curtains, etc.) must be configured first in the **My Inteo 3.0 
 3. **Home Assistant 2025.1+** (for PKCE support)
 
 ### Integration Setup
-1. **Add the integration** via Home Assistant interface
-2. **Authenticate** with your Inteo account via OAuth2
-3. **Devices will be discovered** automatically
+**After installing via HACS or manually:**
+
+1. **Go to Settings → Devices & Services**
+2. **Click "Add Integration"**
+3. **Search for "My InteO 3.0"**
+4. **Click on the integration** to start configuration
+5. **Authenticate** with your Inteo account via OAuth2
+6. **Devices will be discovered** automatically
+
+### 🔧 OAuth2 Authentication Flow
+1. **Click "Configure"** on the integration
+2. **You'll be redirected** to the Inteo website
+3. **Login** with your credentials
+4. **Authorize** access to Home Assistant
+5. **Return to HA** - configuration will be completed automatically
 
 ## 🔧 Features
 

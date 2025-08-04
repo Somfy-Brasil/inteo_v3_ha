@@ -23,7 +23,8 @@ Os dispositivos (persianas, cortinas, etc.) devem ser configurados primeiro no a
 4. Adicione este repositório: `Somfy-Brasil/inteo_v3_ha`
 5. Procure por "My InteO 3.0" nas integrações
 6. Clique em **Download**
-7. Reinicie o Home Assistant
+7. **Reinicie o Home Assistant**
+8. **Configure a integração** (veja seção "Configuração" abaixo)
 
 ### Método 2: Manual
 1. Baixe este repositório
@@ -40,9 +41,21 @@ Os dispositivos (persianas, cortinas, etc.) devem ser configurados primeiro no a
 3. **Home Assistant 2025.1+** (para suporte PKCE)
 
 ### Configuração da Integração
-1. **Adicione a integração** via interface do Home Assistant
-2. **Autentique-se** com sua conta Inteo via OAuth2
-3. **Dispositivos serão descobertos** automaticamente
+**Após instalar via HACS ou manualmente:**
+
+1. **Vá em Configurações → Dispositivos e Serviços**
+2. **Clique em "Adicionar Integração"**
+3. **Procure por "My InteO 3.0"**
+4. **Clique na integração** para iniciar a configuração
+5. **Autentique-se** com sua conta Inteo via OAuth2
+6. **Dispositivos serão descobertos** automaticamente
+
+### 🔧 Fluxo de Autenticação OAuth2
+1. **Clique em "Configurar"** na integração
+2. **Será redirecionado** para o site do Inteo
+3. **Faça login** com suas credenciais
+4. **Autorize** o acesso ao Home Assistant
+5. **Retorne ao HA** - a configuração será finalizada automaticamente
 
 ## 🔧 Funcionalidades
 
