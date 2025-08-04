@@ -2,6 +2,6 @@
     "name": "My InteO 3.0",
     "render_readme": true,
     "domains": ["inteo_v3"],
-    "homeassistant": "2023.8.0",
+    "homeassistant": "2025.1.0",
     "iot_class": "Cloud Polling"
 } 

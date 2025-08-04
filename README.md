@@ -13,16 +13,16 @@ Esta integração permite controlar dispositivos Inteo (cortinas, persianas, etc
 2. Vá em **HACS → Integrações → Adicionar**
 3. Clique nos 3 pontos no canto superior direito
 4. Adicione este repositório: `Somfy-Brasil/inteo_v3_ha`
-5. Procure por "Inteo" nas integrações
+5. Procure por "My InteO 3.0" nas integrações
 6. Clique em **Download**
 7. Reinicie o Home Assistant
 
 ### Método 2: Manual
 1. Baixe este repositório
-2. Copie a pasta `custom_components/inteo` para `/config/custom_components/`
+2. Copie a pasta `custom_components/inteo_v3` para `/config/custom_components/`
 3. Reinicie o Home Assistant
 4. Vá em **Configurações → Integrações → Adicionar Integração**
-5. Procure por "Inteo" e configure
+5. Procure por "My InteO 3.0" e configure
 
 ## ⚙️ Configuração
 
@@ -32,7 +32,7 @@ Esta integração permite controlar dispositivos Inteo (cortinas, persianas, etc
 
 ## 🔧 Funcionalidades
 
-- ✅ **Autenticação OAuth2** segura
+- ✅ **Autenticação OAuth2 PKCE** segura (Home Assistant 2025.1+)
 - ✅ **Descoberta automática** de dispositivos
 - ✅ **Controle de cortinas/persianas**
 - ✅ **Renovação automática** de tokens
@@ -48,8 +48,8 @@ Esta integração permite controlar dispositivos Inteo (cortinas, persianas, etc
 
 ### Estrutura do Projeto
 ```
-custom_components/inteo/
-├── __init__.py          # Setup principal e OAuth2
+custom_components/inteo_v3/
+├── __init__.py          # Setup principal e OAuth2 PKCE
 ├── config_flow.py       # Fluxo de configuração
 ├── manifest.json        # Metadados da integração
 ├── strings.json         # Traduções (PT-BR)
@@ -59,8 +59,11 @@ custom_components/inteo/
 ```
 
 ### Requisitos
-- Home Assistant 2023.8+
+- Home Assistant 2025.1+ (para suporte PKCE)
 - Python 3.9+
+
+### ⚠️ Importante
+Esta integração usa **OAuth2 PKCE** que só está disponível no Home Assistant 2025.1+. Se você estiver usando uma versão anterior, considere atualizar ou usar uma versão alternativa da integração.
 
 ## 🤝 Contribuição
 
@@ -77,7 +80,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 🆘 Suporte
 
 - **Issues**: [GitHub Issues](https://github.com/Somfy-Brasil/inteo_v3_ha/issues)
-- **Documentação**: [Wiki](https://github.com/Somfy-Brasil/inteo_v3_ha/wiki)
 
 ## 📝 Changelog
 
