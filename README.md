@@ -4,7 +4,13 @@ Integração customizada do Home Assistant para dispositivos Inteo v3.0.
 
 ## 📋 Descrição
 
-Esta integração permite controlar dispositivos Inteo (cortinas, persianas, etc.) através do Home Assistant usando autenticação OAuth2.
+Esta integração permite controlar dispositivos conectados ao **Hub Somfy InteO V3** através do Home Assistant usando autenticação OAuth2.
+
+**⚠️ Importante:** Esta integração funciona exclusivamente com:
+- **Hub Somfy InteO V3** (hardware)
+- **App My Inteo 3.0** (necessário para configuração inicial dos dispositivos)
+
+Os dispositivos (persianas, cortinas, etc.) devem ser configurados primeiro no app **My Inteo 3.0** antes de usar esta integração.
 
 ## 🚀 Instalação
 
@@ -26,6 +32,12 @@ Esta integração permite controlar dispositivos Inteo (cortinas, persianas, etc
 
 ## ⚙️ Configuração
 
+### Pré-requisitos
+1. **Hub Somfy InteO V3** instalado e funcionando
+2. **App My Inteo 3.0** instalado e dispositivos configurados
+3. **Home Assistant 2025.1+** (para suporte PKCE)
+
+### Configuração da Integração
 1. **Adicione a integração** via interface do Home Assistant
 2. **Autentique-se** com sua conta Inteo via OAuth2
 3. **Dispositivos serão descobertos** automaticamente
@@ -42,7 +54,9 @@ Esta integração permite controlar dispositivos Inteo (cortinas, persianas, etc
 
 - Cortinas motorizadas
 - Persianas
-- Outros dispositivos Inteo v3.0
+- Outros dispositivos compatíveis com o Hub Somfy InteO V3
+
+**📱 Pré-requisito:** Todos os dispositivos devem ser configurados primeiro no app **My Inteo 3.0**.
 
 ## 🛠️ Desenvolvimento
 
@@ -64,14 +78,6 @@ custom_components/inteo_v3/
 
 ### ⚠️ Importante
 Esta integração usa **OAuth2 PKCE** que só está disponível no Home Assistant 2025.1+. Se você estiver usando uma versão anterior, considere atualizar ou usar uma versão alternativa da integração.
-
-## 🤝 Contribuição
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
 
 ## 📄 Licença
 
