@@ -10,9 +10,12 @@ Esta integração permite controlar dispositivos Inteo (cortinas, persianas, etc
 
 ### Método 1: HACS (Recomendado)
 1. Instale o [HACS](https://hacs.xyz/)
-2. Adicione este repositório como integração customizada
-3. Procure por "Inteo" nas integrações
-4. Instale e reinicie o Home Assistant
+2. Vá em **HACS → Integrações → Adicionar**
+3. Clique nos 3 pontos no canto superior direito
+4. Adicione este repositório: `Somfy-Brasil/inteo_v3_ha`
+5. Procure por "Inteo" nas integrações
+6. Clique em **Download**
+7. Reinicie o Home Assistant
 
 ### Método 2: Manual
 1. Baixe este repositório

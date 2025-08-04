@@ -2,10 +2,11 @@
   "domain": "inteo_v3",
   "name": "My InteO 3.0",
   "version": "0.1.0",
-  "documentation": "https://github.com/ctenuta/inteo-homeassistant",
+  "documentation": "https://github.com/Somfy-Brasil/inteo_v3_ha",
   "requirements": [],
   "dependencies": [],
-  "codeowners": ["@ctenuta"],
+  "codeowners": ["@ctenuta, @Somfy-Brasil"],
   "config_flow": true,
-  "iot_class": "cloud_polling"
+  "iot_class": "cloud_polling",
+  "integration_type": "integration"
 }
